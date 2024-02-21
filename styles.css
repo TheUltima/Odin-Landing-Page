@@ -27,7 +27,7 @@ body {
   justify-content: space-between;
 }
 
-#header #logo {
+.logo {
   font-family: "Megrim", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
@@ -93,7 +93,7 @@ a:hover {
   background-color: rgb(155, 87, 211);
 }
 
-#one {
+.one {
   background-image: linear-gradient(
     90deg,
     rgba(157, 71, 165, 0.521),
@@ -102,22 +102,32 @@ a:hover {
   );
 }
 
-#two {
+.two {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   background-color: rgb(238, 231, 221);
 }
 
-#two cards {
+.two.card-header {
+  flex: 1 1 100%;
   display: flex;
+  justify-content: center;
+  border: 2px solid red;
+  font-size: 20px;
+}
+
+.two.cards {
+  display: flex;
+  flex: 1;
+  border: 2px solid red;
 }
 
 .card {
   flex: 0 1 200px;
-  border: 2px solid red;
 }
 
-#three {
+.three {
   background-color: rgb(193, 213, 214);
 }
