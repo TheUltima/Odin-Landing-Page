@@ -1,3 +1,7 @@
+:root {
+  --gradient-length-header: 600px;
+}
+
 @media screen and (max-width: 600px) {
   #logo {
     font-size: 20px;
@@ -18,8 +22,8 @@ body {
   background-image: linear-gradient(
     90deg,
     rgba(157, 71, 165, 0.521),
-    rgba(137, 43, 226, 0.678) 500px,
-    rgba(171, 98, 238, 0.801) 100%
+    rgba(137, 43, 226, 0.678) var(--gradient-length-header),
+    rgba(171, 98, 238, 0.801) 150%
   );
 }
 
@@ -59,6 +63,7 @@ nav {
   align-items: center;
 }
 
+/*Margin & padding set to 0 because the defaults aren't 0*/
 nav > ul {
   display: flex;
   flex: 0 1 auto;
@@ -87,6 +92,7 @@ a {
   color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 16px;
+  background-blend-mode: color-burn;
 }
 
 a:hover {
@@ -97,35 +103,46 @@ a:hover {
   background-image: linear-gradient(
     90deg,
     rgba(157, 71, 165, 0.521),
-    rgba(137, 43, 226, 0.678) 500px,
-    rgba(171, 98, 238, 0.801) 100%
+    rgba(137, 43, 226, 0.678) var(--gradient-length-header),
+    rgba(171, 98, 238, 0.801) 150%
   );
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.hero-text {
+  flex: 1 1 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.one > img {
+  flex-shrink: 1;
 }
 
 .two {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   background-color: rgb(238, 231, 221);
 }
 
-.two.card-header {
-  flex: 1 1 100%;
-  display: flex;
-  justify-content: center;
+.two > * {
   border: 2px solid red;
+}
+
+.two .card-header {
+  display: flex;
+  flex: 0 1 80px;
+  justify-content: center;
+  align-items: center;
   font-size: 20px;
 }
 
-.two.cards {
+.two .cards {
   display: flex;
-  flex: 1;
-  border: 2px solid red;
-}
-
-.card {
-  flex: 0 1 200px;
+  flex: 1 1 auto;
 }
 
 .three {
