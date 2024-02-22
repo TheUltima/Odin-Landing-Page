@@ -96,7 +96,6 @@ a {
   color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 16px;
-  background-blend-mode: color-burn;
 }
 
 a:hover {
@@ -162,9 +161,11 @@ a:hover {
 /*All Section-2 changes here*/
 #tall.section-2 {
   display: flex;
-  flex: 1 1 500px;
+  flex: 1 1 auto;
   flex-direction: column;
   background-color: rgb(238, 231, 221);
+  padding: 48px;
+  gap: 48px;
 }
 
 /* Creates parallax effect */
@@ -176,19 +177,15 @@ a:hover {
   background-position: center;
 }
 
-.cards > * {
-  border: 2px solid red;
-}
-
 .cards-header {
   display: flex;
-  flex: 0 1 108px;
+  flex: 0 1 auto;
   justify-content: center;
-  align-items: center;
   font-size: 36px;
   font-weight: bold;
   letter-spacing: 0.1em;
   color: rgb(255, 255, 255);
+  text-shadow: 3px 3px 0 rgb(77, 77, 77);
   mix-blend-mode: difference;
 }
 
@@ -197,12 +194,33 @@ a:hover {
   flex: 1 1 auto;
   flex-flow: row wrap;
   justify-content: center;
-  gap: 12px;
+  gap: 16px;
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   flex: 0 1 200px;
-  height: 200px;
+}
+
+.card > img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 4px solid crimson;
+}
+
+/*Centers the cat*/
+.card.four > img {
+  object-position: -120px center;
+}
+
+.image-text {
+  padding: 8px;
+  color: white;
+  font-size: 16px;
+  align-self: center;
 }
 
 /*All Section-3 changes here*/
