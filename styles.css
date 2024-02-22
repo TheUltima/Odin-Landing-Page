@@ -148,6 +148,10 @@ a:hover {
   color: rgb(69, 0, 158);
 }
 
+.hero-container > button:hover {
+  background-color: #cdf5ff;
+}
+
 .section-1 > img {
   width: 500px;
   height: auto;
@@ -172,21 +176,33 @@ a:hover {
   background-position: center;
 }
 
-.section-2 > * {
+.cards > * {
   border: 2px solid red;
 }
 
-.section-2 .card-header {
+.cards-header {
   display: flex;
-  flex: 0 1 80px;
+  flex: 0 1 108px;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: rgb(255, 255, 255);
+  mix-blend-mode: difference;
 }
 
-.section-2 .cards {
+.cards {
   display: flex;
   flex: 1 1 auto;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.card {
+  flex: 0 1 200px;
+  height: 200px;
 }
 
 /*All Section-3 changes here*/
@@ -197,7 +213,7 @@ a:hover {
   align-items: center;
   text-align: justify;
   font-size: 36px;
-  padding: 0 72px;
+  padding: 16px 72px;
 }
 
 /*All Section-4 changes here*/
