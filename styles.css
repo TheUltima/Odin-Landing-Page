@@ -54,7 +54,7 @@ body {
 }
 
 #content > div {
-  flex: 1 1 400px;
+  flex: 1 1 300px;
 }
 
 #footer {
@@ -185,7 +185,7 @@ a:hover {
   font-weight: bold;
   letter-spacing: 0.1em;
   color: rgb(255, 255, 255);
-  text-shadow: 3px 3px 0 rgb(77, 77, 77);
+  text-shadow: 3px 3px 0 rgba(77, 77, 77, 0.5);
   mix-blend-mode: difference;
 }
 
@@ -229,9 +229,26 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: justify;
   font-size: 36px;
-  padding: 16px 72px;
+  padding: 36px;
+}
+
+.quote-container {
+  flex: 0 1 800px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.quote {
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.wise-guy {
+  flex: 0 1 auto;
+  align-self: end;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 /*All Section-4 changes here*/

@@ -17,5 +17,5 @@ Scottch fold cat
 User _Wojciech Kumpicki_ from Pexels:
 Tabby cat
 
-User Katarzyna Modrzejewska
-Royal cat
+User dexmac from Pixabay:
+Yawning cat
