@@ -6,6 +6,10 @@
   #logo {
     font-size: 20px;
   }
+
+  .hero-container > button {
+    align-self: center;
+  }
 }
 
 body {
@@ -98,6 +102,7 @@ a:hover {
   background-color: rgba(160, 44, 255, 0.466);
 }
 
+/*vv All Section-1 changes here vv*/
 .section-1 {
   background-image: linear-gradient(
     90deg,
@@ -106,20 +111,39 @@ a:hover {
     rgba(171, 98, 238, 0.801) 150%
   );
   display: flex;
-  align-content: center;
+  flex-flow: row wrap;
   justify-content: center;
   padding: 60px;
   gap: 12px;
 }
 
-.hero-text {
-  flex: 1 1 auto;
+.hero-container {
+  flex: 1 0 400px;
   display: flex;
-  align-items: center;
+  flex-flow: column nowrap;
   justify-content: center;
-  border: 2px solid red;
+  gap: 12px;
+  padding: 0 60px;
+}
+
+.hero-header {
   font-size: 48px;
-  word-wrap: normal;
+  font-weight: bold;
+}
+
+.hero-text {
+  font-size: 36px;
+}
+
+.hero-container > button {
+  align-self: flex-start;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: aquamarine;
+  cursor: pointer;
+  font-size: 1.2em;
+  color: rgb(69, 0, 158);
 }
 
 .section-1 > img {
@@ -127,9 +151,9 @@ a:hover {
   height: auto;
   flex: 0 0 0;
   object-fit: contain;
-  border: 2px solid red;
 }
 
+/*vv All Section-2 changes here vv*/
 .section-2 {
   display: flex;
   flex-direction: column;
