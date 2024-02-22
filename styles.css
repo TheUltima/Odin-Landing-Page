@@ -114,15 +114,8 @@ a:hover {
   display: flex;
   padding: 60px;
   gap: 12px;
-}
-
-/* Creates parallax effect */
-.section-2.parallax {
-  background-image: var(--mountain-background);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 .hero-container {
@@ -163,10 +156,20 @@ a:hover {
 }
 
 /*All Section-2 changes here*/
-.section-2 {
+#tall.section-2 {
   display: flex;
+  flex: 1 1 500px;
   flex-direction: column;
   background-color: rgb(238, 231, 221);
+}
+
+/* Creates parallax effect */
+.section-2.parallax {
+  background-image: var(--mountain-background);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .section-2 > * {
@@ -189,6 +192,12 @@ a:hover {
 /*All Section-3 changes here*/
 .section-3 {
   background-color: rgb(187, 215, 216);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  font-size: 36px;
+  padding: 0 72px;
 }
 
 /*All Section-4 changes here*/
