@@ -1,5 +1,6 @@
 :root {
   --gradient-length-header: 600px;
+  --mountain-background: url(https://cdn.pixabay.com/photo/2024/02/10/08/01/mountains-8564328_1280.png);
 }
 
 @media screen and (max-width: 600px) {
@@ -102,7 +103,7 @@ a:hover {
   background-color: rgba(160, 44, 255, 0.466);
 }
 
-/*vv All Section-1 changes here vv*/
+/*All Section-1 changes here*/
 .section-1 {
   background-image: linear-gradient(
     90deg,
@@ -111,10 +112,17 @@ a:hover {
     rgba(171, 98, 238, 0.801) 150%
   );
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
   padding: 60px;
   gap: 12px;
+}
+
+/* Creates parallax effect */
+.section-2.parallax {
+  background-image: var(--mountain-background);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .hero-container {
@@ -132,6 +140,7 @@ a:hover {
 }
 
 .hero-text {
+  flex: 0.1 1 auto;
   font-size: 36px;
 }
 
@@ -153,7 +162,7 @@ a:hover {
   object-fit: contain;
 }
 
-/*vv All Section-2 changes here vv*/
+/*All Section-2 changes here*/
 .section-2 {
   display: flex;
   flex-direction: column;
@@ -177,10 +186,12 @@ a:hover {
   flex: 1 1 auto;
 }
 
+/*All Section-3 changes here*/
 .section-3 {
   background-color: rgb(187, 215, 216);
 }
 
+/*All Section-4 changes here*/
 .section-4 {
   background-color: rgba(248, 143, 143, 0.849);
 }
