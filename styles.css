@@ -106,19 +106,43 @@ a:hover {
     rgba(171, 98, 238, 0.801) 150%
   );
   display: flex;
+  flex-wrap: wrap;
   align-content: center;
   justify-content: center;
   padding: 60px;
   gap: 12px;
 }
 
-.hero-text {
-  flex: 1 1 auto;
+.hero-container {
+  flex: 1 0 400px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  border: 2px solid red;
+  gap: 8px;
+  padding: 0 60px;
+}
+
+.hero-container > * {
+  flex: 0 1 auto;
+}
+
+.hero-header {
   font-size: 48px;
+  font-weight: bold;
+}
+
+.hero-text {
+  font-size: 36px;
+}
+
+.hero-container > button {
+  flex: 0 1 auto;
+  align-self: flex-start;
+  border-radius: 8px;
+  border: none;
+  padding: 8px 16px;
+  background-color: rgb(145, 255, 218);
+  cursor: pointer;
 }
 
 .section-1 > img {
@@ -126,17 +150,12 @@ a:hover {
   height: auto;
   flex: 0 0 0;
   object-fit: contain;
-  border: 2px solid red;
 }
 
 .section-2 {
   display: flex;
   flex-direction: column;
   background-color: rgb(238, 231, 221);
-}
-
-.section-2 > * {
-  border: 2px solid red;
 }
 
 .section-2 .card-header {
