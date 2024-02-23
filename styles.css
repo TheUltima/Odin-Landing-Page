@@ -54,7 +54,7 @@ body {
 }
 
 #content > div {
-  flex: 1 1 300px;
+  flex: 1 1 200px;
 }
 
 #footer {
@@ -136,7 +136,7 @@ a:hover {
   font-size: 36px;
 }
 
-.hero-container > button {
+.signup-button {
   align-self: flex-start;
   padding: 8px 16px;
   border: none;
@@ -152,6 +152,7 @@ a:hover {
 }
 
 .section-1 > img {
+  max-width: 110%;
   width: 500px;
   object-fit: cover;
 }
@@ -251,6 +252,7 @@ a:hover {
 
 /*All Section-4 changes here*/
 .section-4 {
+  flex: 0 2 auto;
   background-color: rgba(248, 143, 143, 0.849);
   display: flex;
   justify-content: center;
@@ -258,30 +260,32 @@ a:hover {
   padding: 36px;
 }
 
-.section-4 * {
-  border: 2px solid red;
-}
-
 .request-container {
   display: flex;
+  flex-flow: row wrap;
   flex: 0 1 900px;
   background-color: rgb(45, 160, 255);
   padding: 16px 80px;
   border-radius: 16px;
+  gap: 16px;
 }
 
-.request-container > div {
+.request-message {
   flex: 1 1 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .request-message > .header {
-  font-size: 24px;
+  font-size: 36px;
 }
 
 .request-message > .text {
-  font-size: 16px;
+  font-size: 24px;
 }
 
-.request-container > button {
-  background-color: aquamarine;
+.request-container > .signup-button {
+  align-self: center;
 }
