@@ -12,7 +12,7 @@ Pixabay on Pexels:
 Upside down cat
 
 User _Vadim B_ from Pexels:
-Scottch fold cat
+Scottish Fold cat
 
 User _Wojciech Kumpicki_ from Pexels:
 Tabby cat
