@@ -153,9 +153,7 @@ a:hover {
 
 .section-1 > img {
   width: 500px;
-  height: auto;
-  flex: 0 0 0;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 /*All Section-2 changes here*/
@@ -211,7 +209,7 @@ a:hover {
   border: 4px solid crimson;
 }
 
-/*Centers the cat*/
+/*Centers the cats*/
 .card.four > img {
   object-position: -120px center;
 }
@@ -254,4 +252,36 @@ a:hover {
 /*All Section-4 changes here*/
 .section-4 {
   background-color: rgba(248, 143, 143, 0.849);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 36px;
+}
+
+.section-4 * {
+  border: 2px solid red;
+}
+
+.request-container {
+  display: flex;
+  flex: 0 1 900px;
+  background-color: rgb(45, 160, 255);
+  padding: 16px 80px;
+  border-radius: 16px;
+}
+
+.request-container > div {
+  flex: 1 1 auto;
+}
+
+.request-message > .header {
+  font-size: 24px;
+}
+
+.request-message > .text {
+  font-size: 16px;
+}
+
+.request-container > button {
+  background-color: aquamarine;
 }
